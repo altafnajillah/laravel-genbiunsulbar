@@ -48,13 +48,13 @@
 </head>
 <body class="font-poppins antialiased">
 
-<nav id="navbar" class="navbar fixed w-full bg-white">
+<nav id="navbar" class="navbar fixed w-full bg-[#10758F] z-10">
     <div id="navContainer" class="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-around">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button id="dropdownButton" onclick="mobileMenu()" type="button"
-                        class="relative ml-1 inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        class="relative ml-1 inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                         aria-controls="mobile-menu" aria-expanded="false">
                     <span class="absolute -inset-0.5"></span>
                     <span class="sr-only">Open main menu</span>
@@ -83,9 +83,9 @@
                 <a href="{{ url('/') }}">
                     <div class="flex flex-shrink-0 items-center">
                         <div class="flex items-center mx-2">
-                            <img id="logo" class="logo" src="{{ asset("GenBIUnsulbar.png")}}" width="50px"
+                            <img id="logo" class="logo" src="{{ asset("GenBIUnsulbar.png")}}" width="45px"
                                  alt="GenBI Unsulbar">
-                            <div id="logoText" class="logo-text text-2xl font-bold text-gray-800 ml-2">GenBI
+                            <div id="logoText" class="logo-text text-2xl font-bold text-white ml-2">GenBI
                                 Unsulbar
                             </div>
                         </div>
@@ -95,14 +95,16 @@
             <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="{{ url('/news') }}"
-                       class="rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Berita</a>
-                    <a href="{{ url('/gallery') }}"
-                       class="rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Album</a>
-                    <a href="{{ url('/member') }}"
-                       class="rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Anggota</a>
+                    <a href="{{ url('/') }}"
+                       class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Beranda</a>
                     <a href="{{ url('/about') }}"
-                       class="rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Tentang</a>
+                       class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Tentang</a>
+                    <a href="{{ url('/gallery') }}"
+                       class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Album</a>
+                    <a href="{{ url('/member') }}"
+                       class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Pengurus</a>
+                    <a href="{{ url('/join') }}"
+                       class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Pendaftaran</a>
                 </div>
             </div>
         </div>
@@ -113,25 +115,27 @@
         <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="{{ url('/') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Beranda</a>
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Beranda</a>
             <a href="{{ url('/news') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Berita</a>
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Berita</a>
             <a href="{{ url('/gallery') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Album</a>
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Album</a>
             <a href="{{ url('/member') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Anggota</a>
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Anggota</a>
             <a href="{{ url('/about') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-grey-800 hover:bg-blue-600 hover:text-white">Tentang
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] ">Tentang
                 Kami</a>
         </div>
     </div>
 </nav>
 
-<div class="container mx-auto flex justify-center items-center pt-24">
-    <div class="text-4xl font-ubuntu">
-        @yield('content')
-    </div>
-</div>
+{{--<div class="container mx-auto flex justify-center items-center pt-24">--}}
+{{--    <div class="text-4xl font-ubuntu">--}}
+{{--        @yield('content')--}}
+{{--    </div>--}}
+{{--</div>--}}
+
+@yield('content')
 
 <script>
     // Navbar scrolled
@@ -140,7 +144,7 @@
         const logo = document.getElementById('logo');
         const logoText = document.getElementById('logoText');
         const navContainer = document.getElementById('navContainer');
-        if (window.scrollY > 50) {
+        if (window.scrollY > 30) {
             navbar.classList.add('scrolled');
             logo.classList.add('scrolled');
             logoText.classList.add('scrolled');
