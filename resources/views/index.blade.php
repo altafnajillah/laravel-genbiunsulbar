@@ -7,9 +7,9 @@
         <div class="relative h-auto">
             <div class="absolute inset-0 bg-[#10758F] rounded-b-full"></div>
             <div class="container mx-auto relative">
-                <h1 class="font-bold text-white text-xl md:text-4xl mx-4 text-center font-poppins">{{__("Selamat Datang di Website")}}</h1>
-                <h1 class="font-bold text-white text-xl md:text-4xl mx-4 text-center font-poppins md:mt-3">{{__("GenBI Komisariat Unsulbar")}}</h1>
-                <div class="px-8 md:px-0 mt-2 text-xs md:text-base md:max-w-xl mx-auto">
+                <h1 class="font-bold text-white text-xl md:text-4xl mx-3 pt-4 text-center font-poppins md:pt-8">{{__("Selamat Datang di Website")}}</h1>
+                <h1 class="font-bold text-white text-xl md:text-4xl mx-3 text-center font-poppins md:mt-3">{{__("GenBI Komisariat Unsulbar")}}</h1>
+                <div class="px-8 md:px-0 my-4 text-xs md:text-base md:my-10 md:max-w-xl mx-auto">
                     <h3 class="text-center text-white font-semibold">{{__("Generasi Baru Indonesia (GenBI) merupakan komunitas yang terdiri dari mahasiswa/i penerima beasiswa Bank Indonesia yang yang tersebar di seluruh Indonesia.")}}</h3>
                 </div>
             </div>
@@ -17,22 +17,68 @@
                 <img class="rounded-xl" width="900" src="{{ asset('/images/IMG_4681.png') }}" alt="GenBIUnsulbar">
             </div>
         </div>
-        <div class="mx-auto max-w-sm md:max-w-4xl mt-20 relative h-screen text-xl md:text-4xl text-center">
-            <h1 class="font-poppins font-semibold text-gray-800 mb-10">{{__("Tentang GenBI Unsulbar")}}</h1>
-            <div class="flex items-center justify-center my-5 mx-4">
-                <img width="600" src="{{ asset('./images/BIUSBGenBI.png')  }}" alt="BI Unsulbar GenBIUnsulbar">
-            </div>
-            <div class="flex flex-col md:flex-row items-center bg-[#10758F] rounded-tr-[125px] rounded-bl-[125px] p-10">
-{{--                <img id="logo" class="mb-5 md:mr-5 md:mb-0" src="{{ asset("GenBIUnsulbar.png")}}" width="150px"--}}
-{{--                     alt="GenBI Unsulbar">--}}
-                <div>
-                <h1 class="text-base md:text-2xl text-left text-white font-bold">Apa itu GenBI?</h1>
-                <p class="text-sm md:text-base text-white text-justify">Generasi Baru Indonesia (GenBI) adalah sebuah
-                    komunitas yang berdiri pada 11 November 2011. Perkumpulan ini beranggotakan para mahasiswa yang
-                    berhasil menerima Beasiswa Bank Indonesia (BI). Adapun sebutan akrab untuk anggota GenBI adalah
-                    GenBIers.
-                    Beasiswa tersebut merupakan salah satu bentuk kepedulian Bank Indonesia terhadap ... <a href="/about" class=" bg-white rounded-full py-0.5 px-2 text-[#10758F]">Baca selengkapnya</a></p>
+
+
+        <div class="mx-auto max-w-sm md:max-w-4xl mt-10 md:mt-20 relative text-xl md:text-4xl text-center">
+            <h1 class="font-poppins font-semibold text-gray-800">{{__("Tentang GenBI")}}</h1>
+            <div class="h-1 w-28 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-5 md:mr-5 md:mb-0 p-10 md:p-20">
+                    <img id="logo" src="{{ asset("./images/GenBIUnsulbar2.png")}}" width="w-full"
+                         alt="GenBI Unsulbar">
                 </div>
+                <div class="md:w-1/2 bg-[#10758F] rounded-tr-[100px] rounded-bl-[100px] p-10 md:p-10">
+                    <h1 class="text-base md:text-2xl text-left text-white font-bold">Apa itu GenBI?</h1>
+                    <p class="text-sm md:text-base text-white text-justify">Generasi Baru Indonesia (GenBI) adalah
+                        sebuah komunitas yang berdiri pada 11 November 2011. Perkumpulan ini beranggotakan para
+                        mahasiswa yang
+                        berhasil menerima Beasiswa Bank Indonesia (BI). Adapun sebutan akrab untuk anggota GenBI adalah
+                        GenBIers. Beasiswa tersebut merupakan salah satu bentuk kepedulian Bank Indonesia terhadap ...
+                        <a
+                            href="/about" class=" bg-white rounded-full py-0.5 px-2 text-[#10758F]">Baca
+                            selengkapnya</a>
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-5 mb-20">
+                <img width="600" src="{{ asset('./images/BIUSB.png')  }}" alt="BI Unsulbar">
+            </div>
+
+
+            <h1 class="font-poppins font-semibold text-gray-800">{{__("Berita")}}</h1>
+            <div class="h-1 w-16 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
+            <p class="text-base text-gray-800 mt-5">{{__("Temukan informasi kegiatan kami!")}}</p>
+            <div class="flex flex-col justify-center mt-5 mb-20">
+                <div class="flex flex-col space-x-0 md:flex-row md:space-x-5">
+                    <a href="/news" class="mb-5 md:mb-0 md:w-1/2">
+                        <div class="bg-blue-500 p-4 text-white w-full h-60 rounded-xl">Berita 1</div>
+                        <h3 class="text-xl md:text-3xl font-bold my-1 md:my-4 text-gray-800">Judul Berita</h3>
+                        <p class="text-base md:text-xl text-gray-700">Cuplikan Hello World, Ini kegiatan kami disini dan
+                            ini itu dan lain lain ...</p>
+                    </a>
+                    <a href="/news" class="md:w-1/2">
+                        <div class="bg-green-500 p-4 text-white w-full h-60 rounded-xl">Berita 2</div>
+                        <h3 class="text-xl md:text-3xl font-bold my-1 md:my-4 text-gray-800">Judul Berita</h3>
+                        <p class="text-base md:text-xl text-gray-700">Cuplikan Hello World, Ini kegiatan kami disini dan
+                            ini itu dan lain lain ...</p>
+                    </a>
+                </div>
+                <div class="my-5">
+                    <a href="/news" class="bg-[#10758F] px-4 py-2 text-white text-sm md:text-base rounded-full">Baca
+                        Berita Lainnya...</a>
+                </div>
+            </div>
+            <h1 class="font-poppins font-semibold text-gray-800">{{__("Ketua Umum GenBI Unsulbar")}}</h1>
+            <div class="h-1 w-36 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
+            <div class="bg-[#10758F] px-8 py-5 mt-10 mb-5 max-w-md mx-auto rounded-t-full rounded-br-full">
+                <p class="text-sm md:text-base text-justify text-white"><i>"Berikut adalah isi sembutan selamat datang
+                        dari ketua umum generasi baru indonesia komisariat universitas sulawesi Barat 2024/2025"</i>
+                </p>
+            </div>
+            <div class="text-gray-800 my-10">
+                <div class="w-64 h-56 bg-red-500 rounded-full mx-auto"></div>
+                <h6 class="font-semibold text-xl md:text-4xl">Salman</h6>
+                <p class="font-semibold text-base md:text-xl">D0121111</p>
             </div>
         </div>
         <!-- Main Content -->

@@ -25,3 +25,7 @@ Route::get('/member', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/scholarship', function () {
+    return view('scholarship');
+});
