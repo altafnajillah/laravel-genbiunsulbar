@@ -8,19 +8,10 @@
         <div class="h-96 mx-auto flex flex-col justify-center md:min-h-screen">
             <iframe class="rounded-xl w-full h-full"
                     width="560" height="315" src="https://www.youtube.com/embed/-qAsFAqHjyo?si=MQdQVEs0av4-V4ut"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
-
-            {{--            <iframe--}}
-            {{--                class="w-fit h-[480px] rounded-lg"--}}
-            {{--                --}}{{--            class="absolute top-0 left-0 w-full h-full rounded-lg"--}}
-            {{--                src="https://www.youtube.com/embed/-qAsFAqHjyo?si=MQdQVEs0av4-V4ut"--}}
-            {{--                title="Pengenalan GenBI dan GenBI Unsulbar" frameborder="3"--}}
-            {{--                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"--}}
-            {{--                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>--}}
-            {{--            </iframe>--}}
 
             <div class="bg-[#10758F] rounded-2xl px-4 py-2 text-white my-10 w-fit text-2xl md:text-4xl mx-auto">Halo
                 GenBIers

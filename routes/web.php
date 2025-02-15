@@ -22,6 +22,14 @@ Route::get('/member', function () {
     return view('member');
 });
 
+Route::get('/member/pengurus', function () {
+    return view('pengurus');
+})->name('pengurus');
+
+Route::get('/member/demisioner', function () {
+    return view('demisioner');
+})->name('demisioner');
+
 Route::get('/about', function () {
     return view('about');
 });

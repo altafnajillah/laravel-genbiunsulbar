@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Album')
+@section('title', 'Program Kerja')
 
 @section('content')
     <div class="pt-20 text-center px-10">

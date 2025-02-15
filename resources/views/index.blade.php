@@ -35,7 +35,7 @@
                         berhasil menerima Beasiswa Bank Indonesia (BI). Adapun sebutan akrab untuk anggota GenBI adalah
                         GenBIers. Beasiswa tersebut merupakan salah satu bentuk kepedulian Bank Indonesia terhadap ...
                         <a
-                            href="/about" class=" bg-white rounded-full py-0.5 px-2 text-[#10758F]">Baca
+                            href="/about" class="text-nowrap bg-white rounded-full py-0.5 px-2 text-[#10758F]">Baca
                             selengkapnya</a>
                     </p>
                 </div>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="my-5">
                     <a href="/news" class="bg-[#10758F] px-4 py-2 text-white text-sm md:text-base rounded-full">Baca
-                        Berita Lainnya...</a>
+                        berita lainnya...</a>
                 </div>
             </div>
             <h1 class="font-poppins font-semibold text-gray-800">{{__("Ketua Umum GenBI Unsulbar")}}</h1>

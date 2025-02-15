@@ -124,7 +124,7 @@
                     <div class="relative inline-block text-left ">
                         <div>
                             <button type="button" onclick="moreMenu()"
-                                    class="inline-flex justify-center rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("member", "gallery") ? "activated" : "" }}"
+                                    class="inline-flex justify-center rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("member", "member/*", "gallery") ? "activated" : "" }}"
                                     aria-expanded="true" aria-haspopup="true">
                                 Lainnya
                                 <!-- Heroicon name: solid/chevron-down -->
@@ -142,7 +142,7 @@
                             <!-- Active: "bg-gray-100", Not Active: "" -->
                             <a href="{{ url('/gallery') }}" class="text-gray-700 block px-4 py-2 text-sm rounded-lg {{ Request::is("gallery") ? "bg-gray-200" : "" }}"
                                role="menuitem" tabindex="-1" id="menu-item-1">Program Kerja</a>
-                            <a href="{{ url('/member') }}" class="text-gray-700 block px-4 py-2 text-sm rounded-lg {{ Request::is("member") ? "bg-gray-200" : "" }}" role="menuitem"
+                            <a href="{{ url('/member') }}" class="text-gray-700 block px-4 py-2 text-sm rounded-lg {{ Request::is("member/*") ? "bg-gray-200" : "" }}" role="menuitem"
                                tabindex="-1" id="menu-item-0">Pengurus</a>
                         </div>
                     </div>
