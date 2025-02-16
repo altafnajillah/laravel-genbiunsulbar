@@ -3,8 +3,8 @@
 @section('title', 'Program Kerja')
 
 @section('content')
-    <div class="pt-20 text-center px-10">
-        <h1 class="text-4xl text-gray-800 font-semibold my-5 md:my-10">Program Kerja</h1>
+    <div class="pt-20 text-center px-5">
+        <h1 class="text-2xl md:text-4xl text-gray-800 font-semibold my-5 md:my-10">Program Kerja</h1>
         <p class="text-base md:text-xl">Temukan berbagai foto dan vidio seru dan menarik dari kegiatan GenBI Unsulbar di
             halaman ini</p>
         <div class="grid md:grid-cols-2 mt-10 md:max-w-3xl mx-auto">

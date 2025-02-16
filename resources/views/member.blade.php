@@ -3,8 +3,8 @@
 @section('title', 'Anggota')
 
 @section('content')
-    <div class="pt-20 text-center px-10">
-        <h1 class="text-4xl text-gray-800 font-semibold my-5 md:my-10">Program Kerja</h1>
+    <div class="pt-20 text-center px-5">
+        <h1 class="text-2xl md:text-4xl text-gray-800 font-semibold my-5 md:my-10">Program Kerja</h1>
         <p class="text-base md:text-xl">
             Daftar Pengurus Aktif dan Foto Bersama Demisioner GenBI Unsulbar
         </p>

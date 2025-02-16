@@ -19,7 +19,7 @@
         </div>
 
 
-        <div class="mx-auto max-w-sm md:max-w-4xl mt-10 md:mt-20 relative text-xl md:text-4xl text-center">
+        <div class="mx-auto max-w-sm md:max-w-4xl mt-10 md:mt-20 relative text-xl md:text-4xl text-center px-5">
             <h1 class="font-poppins font-semibold text-gray-800">{{__("Tentang GenBI")}}</h1>
             <div class="h-1 w-28 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
             <div class="flex flex-col md:flex-row items-center">
