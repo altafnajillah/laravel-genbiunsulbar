@@ -34,6 +34,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/scholarship', function () {
-    return view('scholarship');
-});
+Route::get('/scholarship', [\App\Http\Controllers\PublicController::class, 'scholarship']);
+
+// Post Messages
+Route::post('/message/send', [\App\Http\Controllers\PublicController::class, 'sendMessage']);

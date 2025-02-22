@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layout')
 
 @section('title', 'Tentang Kami')
 
@@ -96,7 +96,8 @@
                     </div>
                     <p class="text-xs md:text-base text-left font-semibold">Lingkungan Hidup</p>
                 </div>
-                <div class="absolute w-8 h-8 md:w-16 md:h-16 rounded-full text-[#116b82]" style="bottom: 10%; right: 10%;">
+                <div class="absolute w-8 h-8 md:w-16 md:h-16 rounded-full text-[#116b82]"
+                     style="bottom: 10%; right: 10%;">
                     <div class="flex w-full justify-center mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path fill="currentColor"

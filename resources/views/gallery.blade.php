@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layout')
 
 @section('title', 'Program Kerja')
 
@@ -11,7 +11,7 @@
             <a href="#" class="mb-4 mx-auto">
                 <div class="relative bg-green-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
-                        class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
+                            class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
                         Tgl Kegiatan
                     </div>
                 </div>
@@ -20,7 +20,7 @@
             <a href="#" class="mb-4 mx-auto">
                 <div class="relative bg-red-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
-                        class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
+                            class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
                         Tgl Kegiatan
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             <a href="#" class="mb-4 mx-auto">
                 <div class="relative bg-green-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
-                        class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
+                            class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
                         Tgl Kegiatan
                     </div>
                 </div>
@@ -38,7 +38,7 @@
             <a href="#" class="mb-4 mx-auto">
                 <div class="relative bg-red-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
-                        class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
+                            class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
                         Tgl Kegiatan
                     </div>
                 </div>

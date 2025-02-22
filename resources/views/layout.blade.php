@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="{{ asset('./GenBIUnsulbar.png') }}" type="image/png">
-    <title>GenBI Unsulbar | @yield('title')</title>
+    <title> {{ env('APP_NAME') }} | @yield('title')</title>
     <style>
         .navbar {
             transition: all 0.0s ease;
@@ -101,7 +101,7 @@
                             <img id="logo" class="logo" src="{{ asset("GenBIUnsulbar.png")}}" width="45px"
                                  alt="GenBI Unsulbar">
                             <div id="logoText" class="logo-text text-xl md:text-2xl font-bold text-white ml-2 mr-5">
-                                GenBI Unsulbar
+                                {{ env('APP_NAME') }}
                                 {{--                                {{__("GENBI UNSULBAR")}}--}}
                             </div>
                         </div>
@@ -244,12 +244,13 @@
         </div>
         <div class="md:w-1/2 mt-6 md:mt-0">
             <h1 class="text-xl md:text-2xl font-semibold mb-2">Contact Us!</h1>
-            <form class="space-y-2">
-                <input type="text" placeholder="Nama"
+            <form class="space-y-2" type="submit" action="{{ '/message/send' }}" method="POST">
+                @csrf
+                <input type="text" placeholder="Nama" name="name" id="name" required
                        class="border-4 text-gray-800 border-[#0D5B70] bg-white rounded-md w-full px-4 py-2 active:border-gray-100 focus:border-gray-100 focus:outline-none">
-                <input type="email" placeholder="Email"
+                <input type="email" placeholder="Email" name="email" id="email" required
                        class="border-4 text-gray-800 border-[#0D5B70] bg-white rounded-md w-full px-4 py-2 active:border-gray-100 focus:border-gray-100 focus:outline-none">
-                <textarea type="text" placeholder="Pesan"
+                <textarea type="text" placeholder="Pesan" name="message" id="message" required
                           class="border-4 text-gray-800 border-[#0D5B70] bg-white rounded-md w-full px-4 py-2 h-32 active:border-gray-100 focus:border-gray-100 focus:outline-none"></textarea>
                 <button type="submit"
                         class="flex justify-center items-center [box-shadow:0_5px_0_#063745] bg-[#0D5B70] rounded-md w-full px-4 py-2 active:[box-shadow:0_0px_0_#063745] active:translate-y-[5px] focus:outline-none">
@@ -262,6 +263,46 @@
             </form>
         </div>
     </div>
+    @if (session('success'))
+        <div id="success-alert" class="z-10 fixed top-4 right-4 flex items-center p-4 mb-4 text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+            <div class="flex items-center">
+                <svg class="flex-shrink-0 w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                </svg>
+                <span class="sr-only">Success</span>
+                <div class="ml-2 text-sm font-medium">
+                    {{ session('success') }}
+                </div>
+            </div>
+            <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" onclick="closeAlert('success-alert')" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+    @endif
+
+    @if (session('error'))
+        <div id="error-alert" class="z-10 fixed top-4 right-4 flex items-center p-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            <div class="flex items-center">
+                <svg class="flex-shrink-0 w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 0.5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM13.707 12.293a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
+                </svg>
+                <span class="sr-only">Error</span>
+                <div class="ml-2 text-sm font-medium">
+                    {{ session('error') }}
+                </div>
+            </div>
+            <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700" onclick="closeAlert('error-alert')" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+    @endif
+
     <div class="text-center text-gray-700 py-1 w-full bg-white">
         <p class="text-xs md:text-sm">Copyright &copy; 2025 GenBI Unsulbar</p>
     </div>
@@ -301,6 +342,19 @@
         mobileMenu.classList.contains('hidden') ? mobileMenu.classList.remove('hidden')
             : mobileMenu.classList.add('hidden');
     }
+
+    function closeAlert(elementId) {
+        document.getElementById(elementId).style.display = 'none';
+    }
+
+    // Auto hide after 5 seconds
+    setTimeout(function() {
+        const successAlert = document.getElementById('success-alert');
+        const errorAlert = document.getElementById('error-alert');
+
+        if (successAlert) successAlert.style.display = 'none';
+        if (errorAlert) errorAlert.style.display = 'none';
+    }, 5000);
 
 </script>
 </body>

@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layout')
 
 @section('title', 'Beranda')
 
@@ -35,7 +35,7 @@
                         berhasil menerima Beasiswa Bank Indonesia (BI). Adapun sebutan akrab untuk anggota GenBI adalah
                         GenBIers. Beasiswa tersebut merupakan salah satu bentuk kepedulian Bank Indonesia terhadap ...
                         <a
-                            href="/about" class="text-nowrap bg-white rounded-full py-0.5 px-2 text-[#10758F]">Baca
+                                href="/about" class="text-nowrap bg-white rounded-full py-0.5 px-2 text-[#10758F]">Baca
                             selengkapnya</a>
                     </p>
                 </div>
