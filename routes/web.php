@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
 //Route::get('/', function () {
@@ -34,7 +35,8 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/scholarship', [\App\Http\Controllers\PublicController::class, 'scholarship']);
+Route::get('/scholarship', [PublicController::class, 'scholarship']);
+Route::get('/pendaftaran', [PublicController::class, 'pendaftaran']);
 
 // Post Messages
-Route::post('/message/send', [\App\Http\Controllers\PublicController::class, 'sendMessage']);
+Route::post('/message/send', [PublicController::class, 'sendMessage']);

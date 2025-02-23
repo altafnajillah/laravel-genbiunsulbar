@@ -9,9 +9,15 @@
             Bagaimana sih cara menjadi bagian dari penerima beasiswa <span class="text-[#10758F] font-semibold">Bank Indonesia</span>
             ???
         </p>
-        <div class="max-w-xl mx-auto mt-5 md:mt-10 bg-[#10758F] p-2 rounded-2xl">
-            <img class="rounded-xl" src="{{ asset('/images/pamfletPendaftaran.jpeg') }}" alt="pamflet pendaftaran">
-        </div>
+        <a class="mx-auto mt-10 w-fit h-fit flex space-x-2 bg-[#10758F] rounded-lg px-4 py-2 items-center justify-center"
+           href="/pendaftaran">
+            <p class="text-white font-semibold text-base md:text-lg">Daftar sekarang</p>
+            <svg class="-mr-1 ml-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 9l-7 7-7-7"/>
+            </svg>
+        </a>
         <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
 
         <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Apa Itu Beasiswa Bank Indonesia ?</h1>
@@ -35,129 +41,160 @@
         </div>
         <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
 
-        @if($is_open)
+        <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Pendaftaran Beasiswa Bank
+            Indonesia
+            (BI)</h1>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <p class="text-sm md:text-base mx-auto text-justify">
+                Program ini diselenggarakan oleh Bank Indonesia (BI) dalam hal ini Kantor Perwakilan Bank Indonesia
+                (KPw) wilayah Provinsi Sulawesi Barat untuk membantu mahasiswa yang berprestasi dalam
+                mencapai tujuan pendidikan mereka. Beasiswa ini memberikan kesempatan kepada penerima untuk tidak
+                hanya
+                mendapatkan dana pendidikan, tetapi juga mengikuti berbagai program pengembangan diri yang dapat
+                meningkatkan kompetensi mereka di dunia profesional.
+            </p>
+            <p class="text-sm md:text-base mx-auto text-justify">
+                Beasiswa Bank Indonesia terbuka untuk mahasiswa di berbagai jenjang pendidikan, dengan tujuan untuk
+                mencetak generasi muda yang berkualitas dan siap bersaing di dunia kerja, terutama dalam sektor
+                ekonomi
+                dan keuangan.
+            </p>
+        </div>
+        <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
 
-            <h1 class="text-2xl md:text-4xl text-[#10758F] font-semibold my-10 md:my-16">Telah Dibuka!!!</h1>
 
+        <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Syarat Beasiswa Bank
+            Indonesia</h1>
 
-            <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Pendaftaran Beasiswa Bank
-                Indonesia
-                (BI)</h1>
-            <div class="max-w-3xl mx-auto space-y-4">
-                <p class="text-sm md:text-base mx-auto text-justify">
-                    Program ini diselenggarakan oleh Bank Indonesia (BI) dalam hal ini Kantor Perwakilan Bank Indonesia (KPw) wilayah Provinsi Sulawesi Barat untuk membantu mahasiswa yang berprestasi dalam
-                    mencapai tujuan pendidikan mereka. Beasiswa ini memberikan kesempatan kepada penerima untuk tidak
-                    hanya
-                    mendapatkan dana pendidikan, tetapi juga mengikuti berbagai program pengembangan diri yang dapat
-                    meningkatkan kompetensi mereka di dunia profesional.
-                </p>
-                <p class="text-sm md:text-base mx-auto text-justify">
-                    Beasiswa Bank Indonesia terbuka untuk mahasiswa di berbagai jenjang pendidikan, dengan tujuan untuk
-                    mencetak generasi muda yang berkualitas dan siap bersaing di dunia kerja, terutama dalam sektor
-                    ekonomi
-                    dan keuangan.
-                </p>
-            </div>
-
-            <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Syarat Beasiswa Bank
-                Indonesia</h1>
-
-            <div class="max-w-3xl mx-auto space-y-4">
-                <p class="text-sm md:text-base mx-auto text-justify">
-                    Untuk bisa mengikuti Beasiswa Bank Indonesia, ada beberapa syarat yang harus dipenuhi oleh calon
-                    peserta. Berikut adalah syarat-syarat utama yang harus Anda perhatikan:
-                </p>
-                <div class="space-y-1">
-                    <ol class="text-sm md:text-base text-left list-decimal list-inside space-y-1" type="1">
-                        <li>Mahasiswa aktif PTN &amp; PTS yang sudah bekerja sama dengan Bank Indonesia</li>
-                        <li>Minimal IPK: Reguler [PTN > 3.00; PTS > 3.25], Unggulan > 3.50</li>
-                        <li>Usia maksimal 23 tahun</li>
-                        <li>Minimal SKS > 40</li>
-                        <li>Memiliki pengalaman berorganisasi</li>
-                        <li>Bersedia berperan aktif di GenBI dan masyarakat</li>
-                        <li>TIDAK sedang menerima beasiswa dari pihak lain</li>
-                    </ol>
-                </div>
-            </div>
-
-            {{-- <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Tahapan Seleksi</h1>
-
-             <div class="max-w-3xl mx-auto space-y-4">
-                 <p class="text-sm md:text-base mx-auto text-justify">
-                     Seleksi secara umum dilakukan 2 tahap, yaitu tahap 1 dan tahap 2. Tahap 1 merupakan tahap seleksi
-                     administrasi, sedangkan tahap 2 adalah seleksi khusus untuk yang lolos seleksi tahap 1.
-                 </p>
-
-                 <p class="text-sm md:text-base mx-auto text-justify font-semibold">
-                     Seleksi tahap 1
-                 </p>
-
-                 <p class="text-sm md:text-base mx-auto text-justify font-semibold">
-                     Seleksi tahap 2
-                 </p>
-             </div>--}}
-
-            <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Format Dokumen Administrasi</h1>
-
-            <div class="max-w-3xl mx-auto space-y-4">
-                <p class="text-sm md:text-base mx-auto text-justify">
-                    Berikut adalah beberapa dokumen persyaratan untuk tahapan seleksi dokumen :
-                </p>
-                <div class="space-y-2">
-                    <p class="text-sm md:text-base mx-auto text-justify font-semibold">
-                        Persyaratan Template
+        <div class="max-w-3xl mx-auto space-y-4">
+            <p class="text-sm md:text-base mx-auto text-justify">
+                Untuk bisa mengikuti Beasiswa Bank Indonesia, ada beberapa syarat yang harus dipenuhi oleh calon
+                peserta. Berikut adalah syarat-syarat utama yang harus Anda perhatikan:
+            </p>
+            <ol class="text-sm md:text-base list-decimal list-outside space-y-2 text-[#10758F] text-justify"
+                type="1">
+                <li>
+                    Status Mahasiswa
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Beasiswa ini terbuka untuk mahasiswa aktif di perguruan tinggi yang sudah terakreditasi di
+                        Indonesia. Calon penerima beasiswa harus telah menyelesaikan minimal 40 SKS.
                     </p>
-                    <ol class="text-sm md:text-base text-left list-decimal list-inside space-y-2" type="1">
-                        @foreach($documents as $document)
-                            <li>{{ $document->name }}
-                                <a href="{{ $document->link }}"
-                                   class="bg-[#10758F] px-2 py-0.5 text-white rounded-sm hover:bg-[#0D5B70]"
-                                >
-                                    Lihat
-                                </a>
-                            </li>
-                        @endforeach
-                        {{--<li>Form Biodata Mahasiswa A0
-                            <a href="https://docs.google.com/document/d/1WErbRKyZQVkOW13DNhY1HpAUDLPzVaI0Z2YTSDqGSwQ/"
-                               class="bg-[#10758F] px-2 py-0.5 text-white rounded-sm hover:bg-[#0D5B70]"
-                            >
-                                Lihat
-                            </a>
-                        </li>
-                        <li>Form Biodata Mahasiswa A1
-                            <a href="https://docs.google.com/document/d/1wV7zo9zssAmHWrlYZ4L1VmP54q01Ijyl1yYNpK-FXRY/"
-                               class="bg-[#10758F] px-2 py-0.5 text-white rounded-sm hover:bg-[#0D5B70]">
-                                Lihat
-                            </a>
-                        </li>--}}
-                    </ol>
-                </div>
-                <div class="space-y-1">
-                    <p class="text-sm md:text-base mx-auto text-justify font-semibold">
-                        Persyaratan Data Diri
+                </li>
+                <li>
+                    IPK Minimal
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Calon penerima beasiswa Bank Indonesia harus memiliki IPK minimal 3.00 (skala 4.00). Hal ini
+                        bertujuan untuk memastikan bahwa calon penerima beasiswa memiliki prestasi akademik yang
+                        baik.
                     </p>
-                    <ol class="text-sm md:text-base text-left list-decimal list-inside space-y-1" type="1">
-                        <li>KTM.</li>
-                        <li>KTP.</li>
-                        <li>Fotokopi transkip nilai yang disahkan oleh Universitas Sulawesi Barat.</li>
-                        <li>Surat keterangan TIDAK menerima beasiswa lain.</li>
-                        <li>Menulis <i>motivation letter</i>.</li>
-                        <li>Surat keterangan aktif berorganisasi.</li>
-                        <li>Surat keterangan tidak mampu <span class="text-xs md:text-sm text-red-800 font-semibold">(tidak wajib)</span>.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        @else
-            <div class="min-h-screen flex items-center justify-center">
-                <div class="flex flex-col">
-                    <h1 class="text-xl md:text-3xl text-red-800 font-semibold">Pendaftaran Belum Dibuka :(</h1>
-                    <p class="max-w-xl">Pendaftaran belum dibuka, disini akan dicantumkan syarat dan dokumen pelengkap
-                        yang diperlukan untuk pendaftaran beasiswa. Pantau terus sosial media kami ya!!!</p>
-                </div>
-            </div>
-        @endif
+                </li>
+                <li>
+                    Berkelakukan Baik
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Anda harus memiliki rekam jejak yang baik dalam perilaku akademik maupun sosial. Pihak Bank
+                        Indonesia akan menilai kepribadian dan etika peserta, terutama dalam kegiatan kampus.
+                    </p>
+                </li>
+                <li>
+                    Bidang Studi yang Relevan
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Beasiswa ini biasanya difokuskan untuk mahasiswa yang mengambil jurusan-jurusan yang telah
+                        ditentukan dan akan dilampirkan dalam info pendaftaran. Namun, mahasiswa diluar daftar
+                        jurusan yang telah ditentukan <span class="font-semibold">TETAP DIPERBOLEHKAN</span>
+                        mendaftar.
+                    </p>
+                </li>
+                <li>
+                    Memiliki pengalaman berorganisasi
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Mahasiswa hendaknya memiliki pengalaman dan keterampilan dalam menjalankan sebuah
+                        organisasi. Poin ini akan menjadi nilai tambahan tersendiri sebagai penilaian kriteria
+                        penerima beasiswa Bank Indonesia.
+                    </p>
+                </li>
+                <li>
+                    Bersedia berperan aktif di GenBI dan masyarakat
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        GenBI merupakan komunitas yang berisi para penerima beasiswa Bank Indonesia. Mahasiswa yang
+                        menerima beasiswa diharapkan dapat aktif dalam menjalankan peran GenBI dimasyarakat terutama
+                        dalam menjadi <span class="font-semibold">Frontliner</span>, <span class="font-semibold">Agent of Change</span>
+                        dan <span class="font-semibold">Future Leader</span>.
+                    </p>
+                </li>
+                <li>
+                    TIDAK sedang menerima beasiswa dari pihak lain
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Mahasiswa yang telah menerima beasiswa dari pihak lain baik instansi pemerintah maupun
+                        non-pemerintah tidak diperkenankan untuk mendaftar beasiswa Bank Indonesia.
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
+
+        <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Keuntungan Beasiswa Bank
+            Indonesia</h1>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+            <p class="text-sm md:text-base mx-auto text-justify">
+                Mendapatkan Beasiswa Bank Indonesia tidak hanya mengurangi beban biaya pendidikan, tetapi juga
+                memberikan banyak manfaat tambahan yang dapat mendukung karier akademik dan profesional Anda. Berikut
+                adalah beberapa keuntungan yang bisa Anda dapatkan dari Beasiswa Bank Indonesia :
+            </p>
+            <ol class="text-sm md:text-base list-decimal list-outside space-y-2 text-[#10758F] text-justify"
+                type="1">
+                <li>
+                    Bantuan Dana Pendidikan
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Penerima beasiswa akan mendapatkan bantuan dana untuk membiayai pendidikan mereka, mulai
+                        dari biaya kuliah hingga kebutuhan lainnya yang berkaitan dengan studi.
+                    </p>
+                </li>
+                <li>
+                    Program Pengembangan Diri
+                    <p class="text-sm md:text-base text-gray-800 text-justify">
+                        Selain bantuan finansial, Bank Indonesia juga menyelenggarakan berbagai program pengembangan
+                        diri bagi para penerima beasiswa. Program ini termasuk pelatihan kepemimpinan, pelatihan
+                        keterampilan komunikasi, dan seminar terkait dunia ekonomi dan perbankan.
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
+
+        <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Format Dokumen Administrasi</h1>
+
+
+
+
+        <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
+        <div class="max-w-xl mx-auto bg-[#10758F] rounded-tr-[50px] rounded-bl-[50px] p-10">
+            <p class="text-sm md:text-base text-white text-justify">
+                Beasiswa Bank Indonesia adalah kesempatan besar bagi mahasiswa yang ingin melanjutkan pendidikan dengan
+                dukungan finansial serta memperoleh pengalaman berharga dalam dunia perbankan dan ekonomi. Dengan
+                memenuhi syarat yang ditentukan dan mengikuti proses pendaftaran dengan teliti, Anda bisa meraih peluang
+                ini. Jangan lewatkan kesempatan untuk mendapatkan manfaat yang tidak hanya terbatas pada dana
+                pendidikan, tetapi juga pengembangan diri dan jaringan profesional.
+            </p>
+        </div>
+
+        <h1 class="text-xl md:text-3xl text-gray-800 font-semibold mt-16 md:mt-24">Tunggu apa lagi? siapkan dokumen dan
+            daftar!
+        </h1>
+
+        <a class="mx-auto mt-6 mb-16 md:mb-24 w-fit h-fit flex space-x-2 bg-[#10758F] rounded-lg px-4 py-2 items-center justify-center"
+           href="/pendaftaran">
+            <p class="text-white font-semibold text-base md:text-lg">Daftar sekarang</p>
+            <svg class="-mr-1 ml-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 9l-7 7-7-7"/>
+            </svg>
+        </a>
+
     </div>
-
     <div class="my-10"></div>
 @endsection

@@ -13,9 +13,20 @@ class PublicController extends Controller
     // Scholarship Page
     public function scholarship(): View
     {
-        $documents = Document::all();
+        return view('scholarship');
+    }
+
+    public function pendaftaran(): View
+    {
         $is_open = Page::find(0)->is_open;
-        return view('scholarship', compact('documents', 'is_open'));
+
+        if ($is_open) {
+            $documents = Document::all();
+            return view('pendaftaran.open', compact('documents'));
+
+        } else {
+            return view('pendaftaran.close');
+        }
     }
 
     public function sendMessage(Request $request)

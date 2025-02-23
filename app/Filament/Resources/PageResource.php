@@ -32,7 +32,7 @@ class PageResource extends Resource
                 Forms\Components\Select::make('is_open')->label('Is Open')->options([
                     0 => 'Not Open',
                     1 => 'Open',
-                ])->columnSpan(2),
+                ])->default(0)->columnSpan(2),
             ]);
     }
 
@@ -41,7 +41,7 @@ class PageResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name'),
-                TextColumn::make('is_open'),
+                TextColumn::make('is_open')->formatStateUsing(fn ($state) => $state == 1 ? 'open' : 'closed')->label('Is Open'),
             ])
             ->filters([
                 //

@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{{ asset('./GenBIUnsulbar.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('/images/GenBIUnsulbar.png') }}" type="image/png">
     <title> {{ env('APP_NAME') }} | @yield('title')</title>
     <style>
         .navbar {
@@ -98,11 +98,10 @@
                 <a href="{{ url('/') }}">
                     <div class="flex flex-shrink-0 items-center">
                         <div class="flex items-center mx-2">
-                            <img id="logo" class="logo" src="{{ asset("GenBIUnsulbar.png")}}" width="45px"
+                            <img id="logo" class="logo" src="{{ asset("/images/GenBIUnsulbar.png")}}" width="45px"
                                  alt="GenBI Unsulbar">
                             <div id="logoText" class="logo-text text-xl md:text-2xl font-bold text-white ml-2 mr-5">
                                 {{ env('APP_NAME') }}
-                                {{--                                {{__("GENBI UNSULBAR")}}--}}
                             </div>
                         </div>
                     </div>
