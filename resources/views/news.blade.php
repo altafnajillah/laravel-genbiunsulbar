@@ -8,7 +8,7 @@
         <p class="text-base md:text-xl">Temukan berbagai aktivitas dan berita menarik dari kegiatan GenBI Unsulbar di
             halaman ini</p>
         <div class="grid md:grid-cols-2 mt-10 md:max-w-3xl mx-auto">
-            <a href="#" class="mb-4 mx-auto flex flex-col items-center">
+            <a href="news/hello" class="mb-4 mx-auto flex flex-col items-center">
                 <div class="relative bg-green-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
                             class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
@@ -23,7 +23,7 @@
                     </p>
                 </div>
             </a>
-            <a href="#" class="mb-4 mx-auto flex flex-col items-center">
+            <a href="news/hello" class="mb-4 mx-auto flex flex-col items-center">
                 <div class="relative bg-red-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
                             class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
@@ -38,7 +38,7 @@
                     </p>
                 </div>
             </a>
-            <a href="#" class="mb-4 mx-auto flex flex-col items-center">
+            <a href="news/hello" class="mb-4 mx-auto flex flex-col items-center">
                 <div class="relative bg-green-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
                             class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
@@ -53,7 +53,7 @@
                     </p>
                 </div>
             </a>
-            <a href="#" class="mb-4 mx-auto flex flex-col items-center">
+            <a href="news/hello" class="mb-4 mx-auto flex flex-col items-center">
                 <div class="relative bg-red-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
                             class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">
@@ -68,7 +68,7 @@
                     </p>
                 </div>
             </a>
-            <a href="#" class="mb-4 mx-auto flex flex-col items-center">
+            <a href="news/hello" class="mb-4 mx-auto flex flex-col items-center">
                 <div class="relative bg-green-500 p-4 text-white w-80 h-52 rounded-xl">
                     <div
                             class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800  opacity-75">

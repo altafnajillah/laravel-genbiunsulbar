@@ -3,38 +3,44 @@
 use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
 Route::get('/', function () {
     return view('index');
 });
-
-Route::get('/news', function () {
-    return view('news');
-});
-
-Route::get('/gallery', function () {
-    return view('gallery');
-});
-
-Route::get('/member', function () {
-    return view('member');
-});
-
-Route::get('/member/pengurus', function () {
-    return view('pengurus');
-})->name('pengurus');
-
-Route::get('/member/demisioner', function () {
-    return view('demisioner');
-})->name('demisioner');
 
 Route::get('/about', function () {
     return view('about');
 });
 
+// News Route
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/news/hello', function () {
+    return view('show.news');
+});
+
+// Gallery Route
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+
+Route::get('/gallery/hello', function () {
+    return view('show.gallery');
+});
+
+// Pengurus dan Demisioner Route
+Route::get('/member', function () {
+    return redirect('/member/pengurus');
+});
+
+Route::get('/member/pengurus', function () {
+    return view('members.pengurus');
+})->name('pengurus');
+
+Route::get('/member/demisioner', [PublicController::class, 'getDemisioners'])->name('demisioner');
+
+// Beasiswa Route
 Route::get('/scholarship', [PublicController::class, 'scholarship']);
 Route::get('/pendaftaran', [PublicController::class, 'pendaftaran']);
 

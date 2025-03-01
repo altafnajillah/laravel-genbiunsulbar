@@ -21,7 +21,6 @@ class DatabaseSeeder extends Seeder
 //        ]);
 
         $this->call([
-            MemberSeeder::class,
             MessageSeeder::class,
             UserSeeder::class,
             DocumentSeeder::class,

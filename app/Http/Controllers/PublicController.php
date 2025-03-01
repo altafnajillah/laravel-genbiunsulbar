@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Demisioner;
 use App\Models\Document;
 use App\Models\Message;
 use App\Models\Page;
@@ -29,6 +30,7 @@ class PublicController extends Controller
         }
     }
 
+    // Message Feature
     public function sendMessage(Request $request)
     {
         try {
@@ -50,6 +52,12 @@ class PublicController extends Controller
         } catch (\Throwable $th) {
             return redirect('/')->with('error', 'Pesan kamu gagal dikirim!');
         }
+    }
 
+    // Members and Demisioners
+    public function getDemisioners()
+    {
+        $demisioners = Demisioner::all()->sortBy('name', descending: true);
+        return view('members.demisioner', compact('demisioners'));
     }
 }

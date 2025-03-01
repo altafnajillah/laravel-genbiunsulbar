@@ -5,7 +5,7 @@
 @section('content')
     <div class="pt-20 text-center px-10">
         <h1 class="text-2xl md:text-4xl text-gray-800 font-semibold my-5 md:my-10">Halo GenBIers</h1>
-        <p class="text-base md:text-xl max-w-xl mx-auto">
+        <p class="text-base md:text-xl text-gray-800 max-w-xl mx-auto">
             Bagaimana sih cara menjadi bagian dari penerima beasiswa <span class="text-[#10758F] font-semibold">Bank Indonesia</span>
             ???
         </p>
@@ -163,13 +163,6 @@
         </div>
         <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
 
-
-        <h1 class="text-xl md:text-3xl text-gray-800 font-semibold my-5 md:my-10">Format Dokumen Administrasi</h1>
-
-
-
-
-        <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
 
         <div class="max-w-xl mx-auto bg-[#10758F] rounded-tr-[50px] rounded-bl-[50px] p-10">
             <p class="text-sm md:text-base text-white text-justify">

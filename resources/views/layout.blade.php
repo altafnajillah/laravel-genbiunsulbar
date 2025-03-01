@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="{{ asset('/images/GenBIUnsulbar.png') }}" type="image/png">
-    <title> {{ env('APP_NAME') }} | @yield('title')</title>
+    <title>@yield('title') - {{ env('APP_NAME') }}</title>
     <style>
         .navbar {
             transition: all 0.0s ease;
@@ -115,9 +115,9 @@
                     <a href="{{ url('/about') }}"
                        class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("about") ? "activated" : "" }}">Tentang</a>
                     <a href="{{ url('/news') }}"
-                       class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("news") ? "activated" : "" }}">Berita</a>
+                       class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("news", "news/*") ? "activated" : "" }}">Berita</a>
                     <a href="{{ url('/scholarship') }}"
-                       class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("scholarship") ? "activated" : "" }}">Beasiswa</a>
+                       class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("scholarship", "pendaftaran") ? "activated" : "" }}">Beasiswa</a>
                     {{--                    <a href="{{ url('/') }}"--}}
                     {{--                       class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] ">Lainnya</a>--}}
                     <div class="relative inline-block text-left ">
@@ -157,12 +157,13 @@
             <a href="{{ url('/') }}"
                class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("/") ? "bg-[#0D5B70]" : "" }}">Beranda</a>
             <a href="{{ url('/about') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("about") ? "bg-[#0D5B70]" : "" }}">Tentang
-                Kami</a>
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("about") ? "bg-[#0D5B70]" : "" }}">
+                Tentang Kami
+            </a>
             <a href="{{ url('/news') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("news") ? "bg-[#0D5B70]" : "" }}">Berita</a>
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("news", "news/*") ? "bg-[#0D5B70]" : "" }}">Berita</a>
             <a href="{{ url('/scholarship') }}"
-               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("scholarship") ? "bg-[#0D5B70]" : "" }}">Beasiswa</a>
+               class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("scholarship", "pendaftaran") ? "bg-[#0D5B70]" : "" }}">Beasiswa</a>
             <a href="{{ url('/gallery') }}"
                class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("gallery") ? "bg-[#0D5B70]" : "" }}">Program Kerja</a>
             <a href="{{ url('/member') }}"

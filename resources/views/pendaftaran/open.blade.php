@@ -7,14 +7,14 @@
         <h1 class="text-2xl md:text-4xl text-gray-800 font-semibold my-5 md:my-10">
             Pendaftaran Beasiswa Bank Indonesia
         </h1>
-        <p class="text-base md:text-xl max-w-xl mx-auto">
-            Tunggu apa lagi siapkan dokumen dan daftarkan dirimu!
+        <p class="text-base text-gray-800 md:text-xl mx-auto">
+            Tunggu apa lagi? ayo siapkan dokumen dan daftarkan dirimu!
         </p>
 
         <div class="my-10 md:my-14 max-w-lg mx-auto space-y-3">
             <div
                 class="ml-auto w-full px-2 md:px-4 py-2 md:py-4 rounded-lg bg-[#0D5B70] font-semibold text-xl md:text-2xl text-white">
-                Timeline Seleksi Berkas Beasiswa
+                Timeline Seleksi Beasiswa
             </div>
             <div
                 class="mr-auto w-full px-2 md:px-4 py-2 md:py-4 rounded-lg bg-[#0D5B70] font-semibold text-base md:text-lg text-white">
@@ -43,7 +43,7 @@
         </p>
 
         <div class="max-w-3xl mx-auto space-y-4 bg-[#D9D9D980] mt-8 md:mt-10 rounded-xl px-10 py-5">
-            <div class="w-full py-2 md:py-4 rounded-lg bg-[#0D5B70] font-semibold text-base md:text-lg text-white">
+            <div class="w-full py-2 px-1 md:py-4 rounded-lg bg-[#0D5B70] font-semibold text-base md:text-lg text-white">
                 Kriteria Umum Mahasiswa Penerima Beasiswa Jenjang S1
             </div>
             <p class="text-sm md:text-base mx-auto text-justify">
@@ -79,7 +79,7 @@
         </div>
 
         <div class="max-w-3xl mx-auto space-y-4 bg-[#D9D9D980] rounded-xl mt-10 px-10 py-5">
-            <div class="w-full py-2 md:py-4 rounded-lg bg-[#0D5B70] font-semibold text-lg md:text-xl text-white">
+            <div class="w-full py-2 px-1 md:py-4 rounded-lg bg-[#0D5B70] font-semibold text-lg md:text-xl text-white">
                 Kriteria Khusus Mahasiswa Reguler S1
             </div>
             <p class="text-sm md:text-base mx-auto text-justify">
@@ -142,9 +142,9 @@
                 </p>
                 <ol class="text-sm md:text-base text-left list-decimal list-outside space-y-2 pl-5" type="1">
                     @foreach($documents as $document)
-                        <li>{{ $document->name }}
+                        <li>{{ $document->name }}<br>
                             <a href="{{ $document->link }}"
-                               class="bg-[#10758F] px-2 py-0.5 text-white rounded-sm hover:bg-[#0D5B70]"
+                               class="bg-[#10758F] px-2 py-0.5 mt-0.5 text-white rounded-sm hover:bg-[#0D5B70]"
                             >
                                 Lihat
                             </a>
