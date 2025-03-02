@@ -12,13 +12,9 @@ Route::get('/about', function () {
 });
 
 // News Route
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', [PublicController::class, 'news']);
 
-Route::get('/news/hello', function () {
-    return view('show.news');
-});
+Route::get('/news/{id}', [PublicController::class, 'showNews'])->name('showNews');
 
 // Gallery Route
 Route::get('/gallery', function () {

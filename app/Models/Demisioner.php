@@ -21,5 +21,11 @@ class Demisioner extends Model
                 Storage::disk('public')->delete($demisioner->getOriginal('image'));
             }
         });
+
+        static::deleting(function ($demisioner) {
+            if ($demisioner->getOriginal('image') !== null) {
+                Storage::disk('public')->delete($demisioner->getOriginal('image'));
+            }
+        });
     }
 }
