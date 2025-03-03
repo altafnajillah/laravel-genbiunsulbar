@@ -3,9 +3,7 @@
 use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [PublicController::class, 'index']);
 
 Route::get('/about', function () {
     return view('about');
@@ -17,22 +15,16 @@ Route::get('/news', [PublicController::class, 'news']);
 Route::get('/news/{id}', [PublicController::class, 'showNews'])->name('showNews');
 
 // Gallery Route
-Route::get('/gallery', function () {
-    return view('gallery');
-});
+Route::get('/gallery', [PublicController::class, 'gallery']);
 
-Route::get('/gallery/hello', function () {
-    return view('show.gallery');
-});
+Route::get('/gallery/{id}', [PublicController::class, 'showGallery'])->name('showGallery');
 
 // Pengurus dan Demisioner Route
 Route::get('/member', function () {
     return redirect('/member/pengurus');
 });
 
-Route::get('/member/pengurus', function () {
-    return view('members.pengurus');
-})->name('pengurus');
+Route::get('/member/pengurus', [PublicController::class, 'getMembers'])->name('pengurus');
 
 Route::get('/member/demisioner', [PublicController::class, 'getDemisioners'])->name('demisioner');
 

@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class DemisionerResource extends Resource
 {
     protected static ?string $model = Demisioner::class;
+    protected static ?string $navigationGroup = 'Members';
 
     protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
 
@@ -27,8 +28,8 @@ class DemisionerResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->length(9)->required(),
-                FileUpload::make('image')->image()->disk('public')->directory('demisioners')->required(),
+                TextInput::make('name')->length(9)->required()->columnSpan(2),
+                FileUpload::make('image')->image()->disk('public')->directory('demisioners')->required()->columnSpan(2),
             ]);
     }
 
@@ -36,8 +37,8 @@ class DemisionerResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name')->sortable(),
-                ImageColumn::make('image'),
+                TextColumn::make('name')->sortable()->label('Angkatan'),
+                ImageColumn::make('image')->defaultImageUrl(url('images/dummy/demisioners/dummy-demisioner.png')),
             ])
             ->filters([
                 //

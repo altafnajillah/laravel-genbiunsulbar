@@ -118,8 +118,6 @@
                        class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("news", "news/*") ? "activated" : "" }}">Berita</a>
                     <a href="{{ url('/scholarship') }}"
                        class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] {{ Request::is("scholarship", "pendaftaran") ? "activated" : "" }}">Beasiswa</a>
-                    {{--                    <a href="{{ url('/') }}"--}}
-                    {{--                       class="rounded-md px-3 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#0D5B70] ">Lainnya</a>--}}
                     <div class="relative inline-block text-left ">
                         <div>
                             <button type="button" onclick="moreMenu()"

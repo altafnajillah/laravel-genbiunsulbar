@@ -24,7 +24,7 @@
         <div class="max-w-3xl mx-auto space-y-4">
             <div class="flex flex-col md:flex-row md:space-x-2">
                 <div class="md:w-1/2">
-                    <p class="text-sm md:text-base mx-auto text-justify">
+                    <p class="text-sm md:text-base mx-auto text-justify text-gray-800">
                         <span class="text-[#10758F] font-semibold">Bank Indonesia (BI)</span> selalu menjadi peluang
                         besar bagi mahasiswa yang ingin melanjutkan pendidikan mereka dengan dukungan finansial.
                         Beasiswa ini tidak hanya menawarkan bantuan dana pendidikan, tetapi juga berbagai keuntungan
@@ -45,7 +45,7 @@
             Indonesia
             (BI)</h1>
         <div class="max-w-3xl mx-auto space-y-4">
-            <p class="text-sm md:text-base mx-auto text-justify">
+            <p class="text-sm md:text-base mx-auto text-justify text-gray-800">
                 Program ini diselenggarakan oleh Bank Indonesia (BI) dalam hal ini Kantor Perwakilan Bank Indonesia
                 (KPw) wilayah Provinsi Sulawesi Barat untuk membantu mahasiswa yang berprestasi dalam
                 mencapai tujuan pendidikan mereka. Beasiswa ini memberikan kesempatan kepada penerima untuk tidak
@@ -53,7 +53,7 @@
                 mendapatkan dana pendidikan, tetapi juga mengikuti berbagai program pengembangan diri yang dapat
                 meningkatkan kompetensi mereka di dunia profesional.
             </p>
-            <p class="text-sm md:text-base mx-auto text-justify">
+            <p class="text-sm md:text-base mx-auto text-justify text-gray-800">
                 Beasiswa Bank Indonesia terbuka untuk mahasiswa di berbagai jenjang pendidikan, dengan tujuan untuk
                 mencetak generasi muda yang berkualitas dan siap bersaing di dunia kerja, terutama dalam sektor
                 ekonomi
@@ -67,7 +67,7 @@
             Indonesia</h1>
 
         <div class="max-w-3xl mx-auto space-y-4">
-            <p class="text-sm md:text-base mx-auto text-justify">
+            <p class="text-sm md:text-base mx-auto text-justify text-gray-800">
                 Untuk bisa mengikuti Beasiswa Bank Indonesia, ada beberapa syarat yang harus dipenuhi oleh calon
                 peserta. Berikut adalah syarat-syarat utama yang harus Anda perhatikan:
             </p>
@@ -137,7 +137,7 @@
             Indonesia</h1>
 
         <div class="max-w-3xl mx-auto space-y-4">
-            <p class="text-sm md:text-base mx-auto text-justify">
+            <p class="text-sm md:text-base mx-auto text-gray-800 text-justify">
                 Mendapatkan Beasiswa Bank Indonesia tidak hanya mengurangi beban biaya pendidikan, tetapi juga
                 memberikan banyak manfaat tambahan yang dapat mendukung karier akademik dan profesional Anda. Berikut
                 adalah beberapa keuntungan yang bisa Anda dapatkan dari Beasiswa Bank Indonesia :

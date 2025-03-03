@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
-
+    protected static ?string $navigationGroup = 'Pendaftaran';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function canCreate(): bool

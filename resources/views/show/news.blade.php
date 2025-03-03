@@ -8,7 +8,7 @@
             {{ $news->title }}
         </h1>
         <p class="text-xs md:text-base text-gray-500 max-w-xl mx-auto">
-            {{ $news->published_at_formatted }}
+            {{ $news->published_at }}
         </p>
 
         <div class="flex max-w-3xl items-center justify-center my-6 mx-auto relative">

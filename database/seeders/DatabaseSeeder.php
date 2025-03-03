@@ -21,10 +21,12 @@ class DatabaseSeeder extends Seeder
 //        ]);
 
         $this->call([
-            MessageSeeder::class,
             UserSeeder::class,
-            DocumentSeeder::class,
             PageSeeder::class,
+            MemberSeeder::class,
+            MessageSeeder::class,
+            DocumentSeeder::class,
+            DemisionerSeeder::class,
             NewsSeeder::class,
             NewsParagraphSeeder::class,
         ]);

@@ -39,7 +39,7 @@
             dan <span class="text-blue-800">Map Biru (Mahasiswa GenBI)</span>.
         </p>
         <p class="text-base md:text-xl max-w-xl mx-auto">
-            Selanjutnya dokumen dimaksud disampaikan kepada bagian Kemahasiswaan Universitas Sulawesi Barat
+            Selanjutnya dokumen tersebut dikumpulkan di bagian Kemahasiswaan Universitas Sulawesi Barat
         </p>
 
         <div class="max-w-3xl mx-auto space-y-4 bg-[#D9D9D980] mt-8 md:mt-10 rounded-xl px-10 py-5">

@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center mt-2 mx-4 relative">
-                <img class="rounded-xl" width="900" src="{{ asset('/images/IMG_4681.png') }}" alt="GenBIUnsulbar">
+                <img class="rounded-xl" width="900" src="{{ asset('/images/GambarBeranda.png') }}" alt="GenBIUnsulbar">
             </div>
         </div>
 
@@ -48,20 +48,20 @@
             <h1 class="font-poppins font-semibold text-gray-800">{{__("Berita")}}</h1>
             <div class="h-1 w-16 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
             <p class="text-base text-gray-800 mt-5">{{__("Temukan informasi kegiatan kami!")}}</p>
-            <div class="flex flex-col justify-center mt-5 mb-20">
-                <div class="flex flex-col space-x-0 md:flex-row md:space-x-5">
-                    <a href="/news" class="mb-5 md:mb-0 md:w-1/2">
-                        <div class="bg-blue-500 p-4 text-white w-full h-60 rounded-xl">Berita 1</div>
-                        <h3 class="text-xl md:text-3xl font-bold my-1 md:my-4 text-gray-800">Judul Berita</h3>
-                        <p class="text-base md:text-xl text-gray-700">Cuplikan Hello World, Ini kegiatan kami disini dan
-                            ini itu dan lain lain ...</p>
+            <div class="flex flex-col justify-center mt-5 md:mt-10 mb-20">
+                <div class="flex flex-col space-y-2 md:space-y-0 space-x-0 md:flex-row md:space-x-5">
+                    @foreach($beritas as $berita)
+                    <a href="{{ route('showNews', $berita->id) }}" class="mb-0 md:w-1/2 flex flex-col justify-between items-center rounded-xl shadow-xl">
+                        <div class="w-full h-60 rounded-xl flex flex-col justify-center items-center">
+                            <img class="rounded-xl" loading="lazy" src="{{ asset( $berita->image ) }}"
+                                 alt="Gambar Berita">
+                        </div>
+                        <h3 class="text-lg md:text-2xl font-bold my-1 md:my-4 text-gray-800">{{ $berita->title }}</h3>
+                        <p class="text-sm md:text-base text-gray-700 overflow-hidden line-clamp-3 text-justify px-4">
+                            {{ $berita->paragraphs->get(0)->content }}
+                        </p>
                     </a>
-                    <a href="/news" class="md:w-1/2">
-                        <div class="bg-green-500 p-4 text-white w-full h-60 rounded-xl">Berita 2</div>
-                        <h3 class="text-xl md:text-3xl font-bold my-1 md:my-4 text-gray-800">Judul Berita</h3>
-                        <p class="text-base md:text-xl text-gray-700">Cuplikan Hello World, Ini kegiatan kami disini dan
-                            ini itu dan lain lain ...</p>
-                    </a>
+                    @endforeach
                 </div>
                 <div class="my-5">
                     <a href="/news" class="bg-[#10758F] px-4 py-2 text-white text-sm md:text-base rounded-full">Baca
@@ -72,13 +72,16 @@
             <div class="h-1 w-36 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
             <div class="bg-[#10758F] px-8 py-5 mt-10 mb-5 max-w-md mx-auto rounded-t-full rounded-br-full">
                 <p class="text-sm md:text-base text-justify text-white"><i>"Berikut adalah isi sembutan selamat datang
-                        dari ketua umum generasi baru indonesia komisariat universitas sulawesi Barat 2024/2025"</i>
+                        dari ketua umum Generasi Baru Indonesia komisariat Universitas Sulawesi Barat 2024/2025"</i>
                 </p>
             </div>
             <div class="text-gray-800 my-10">
-                <div class="w-64 h-56 bg-red-500 rounded-full mx-auto"></div>
-                <h6 class="font-semibold text-xl md:text-4xl">Salman</h6>
-                <p class="font-semibold text-base md:text-xl">D0121111</p>
+                <div class="w-64 h-52 bg-red-500 rounded-full mx-auto flex justify-center items-center">
+                    <img id="logo" class="h-52" src="{{ asset("./images/ketum-dummy.png")}}" width="w-full"
+                         alt="GenBI Unsulbar">
+                </div>
+                <h6 class="font-semibold text-xl md:text-4xl">{{ $ketua->name }}</h6>
+                <p class="font-semibold text-base md:text-xl">{{ $ketua->nim }}</p>
             </div>
         </div>
         <!-- Main Content -->

@@ -16,12 +16,12 @@ class NewsSeeder extends Seeder
         DB::table('news')->insert([
             [
                 'title' => 'GenBI Unsulbar Mengadakan GenBI Mengajar 2025',
-                'image' => '/images/BIUSBGenBI.png',
+                'image' => null,
                 'published_at' => now(),
             ],
             [
                 'title' => 'GenBI Unsulbar Kunjungan Museum',
-                'image' => '/images/BIUSB.png',
+                'image' => null,
                 'published_at' => now(),
             ]
         ]);

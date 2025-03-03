@@ -12,7 +12,7 @@
             <h1 class="text-xl md:text-3xl font-poppins font-semibold bg-[#10758F] w-fit px-4 py-2 rounded-xl text-white mx-auto">{{ $demisioner->name }}</h1>
         </div>
         <div class="flex items-center justify-center mt-2 mx-4 relative">
-            <img class="rounded-xl" loading="lazy" width="900" src="{{ asset('/storage/' . $demisioner->image ) }}"
+            <img class="rounded-xl" loading="lazy" width="900" src="{{ asset( $demisioner->image ) }}"
                  alt="{{ "Demisioner " . $demisioner->name }}">
         </div>
 
