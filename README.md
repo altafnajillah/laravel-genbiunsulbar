@@ -1,11 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="/public/images/GenBIUnsulbar.png" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="/public/images/GenBIUnsulbar.png" width="386" alt="Laravel Logo"></a></p>
 
 ## Tentang Proyek
 
@@ -19,11 +12,11 @@ Berikut panduan awal proses menjalankan aplikasi.
 
 #### Pastikan bahwa anda telah menginstall beberapa tools berikut:
 
-1. Git
-2. PHP versi ^8.2
-2. Composer
-3. npm
-4. Database mysql dan semacamnya
+1. Git.
+2. PHP versi ^8.2.
+3. Composer.
+4. NodeJS.
+5. Database mysql dan semacamnya.
 
 #### Cloning Repositori dengan menggunakan perintah
 
@@ -53,7 +46,7 @@ Berikut panduan awal proses menjalankan aplikasi.
 
   ```npm install```
 
-#### Key dan Migration
+#### Key, Migration dan Storage
 
 - Generate key untuk app dengan perintah :
 
@@ -65,12 +58,14 @@ Berikut panduan awal proses menjalankan aplikasi.
 
 - Lakukan seeding dengan perintah :
 
-  ```php artisan db:seed```
-
-  atau
+  ```php artisan db:seed``` atau,
 - Lakukan keduanya sekaligus dengan menggunakan perintah :
 
   ```php artisan migrate --seed```
+
+- Buat link antara public dan storage menggunakan perintah :
+
+  ```php artisan storage:link```
 
 #### Menjalankan Web
 

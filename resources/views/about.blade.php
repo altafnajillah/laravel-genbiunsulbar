@@ -21,8 +21,7 @@
             <p class="text-sm md:text-lg text-center text-gray-800">
                 <span class="text-[#10758F] font-semibold">Generasi Baru Indonesia (GenBI)</span> adalah sebuah
                 komunitas yang berdiri pada 11 November 2011. Perkumpulan ini beranggotakan para mahasiswa yang berhasil
-                menerima <span class="text-[#10758F] font-semibold">Beasiswa Bank Indonesia (BI)</span>. Adapun sebutan
-                akrab untuk anggota GenBI adalah GenBIers.
+                menerima <span class="text-[#10758F] font-semibold">Beasiswa Bank Indonesia (BI)</span>.
                 Beasiswa tersebut merupakan salah satu bentuk kepedulian Bank Indonesia terhadap kualitas pendidikan
                 anak negeri yang kurang beruntung dalam hal finansial.
                 Tidak hanya itu, pemberian bantuan ini juga menjadi apresiasi terhadap mahasiswa berprestasi yang juga

@@ -6,8 +6,11 @@
             kepengurusan yang terdiri dari:</p>
     </div>
 
+    <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
     <div class="my-10">
         <h1 class="text-xl md:text-3xl font-poppins font-semibold text-gray-800">{{__("Pengurus Inti")}}</h1>
+        <div class="h-1 w-32 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
     </div>
 
     <div class="max-w-4xl flex flex-col md:justify-center md:flex-row text-center mx-auto mb-2">
@@ -35,8 +38,11 @@
         </div>
     </div>
 
+    <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
     <div class="mt-20 mb-10 max-w-md mx-auto">
         <h1 class="text-xl md:text-3xl font-poppins font-semibold text-gray-800">{{__("Departemen Pendidikan")}}</h1>
+        <div class="h-1 w-32 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
     </div>
     <div
         class="max-w-lg space-y-4 md:space-y-0 mt-4 md:mt-10 grid grid-cols-1 md:grid-cols-2 md:justify-center text-center mx-auto">
@@ -70,8 +76,11 @@
         @endfor
     </div>
 
+    <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
     <div class="mt-20 mb-10 max-w-md mx-auto">
         <h1 class="text-xl md:text-3xl font-poppins font-semibold text-gray-800">{{__("Departemen Publikasi dan Sosialisasi")}}</h1>
+        <div class="h-1 w-24 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
     </div>
     <div
         class="max-w-lg space-y-4 md:space-y-0 mt-4 md:mt-10 grid grid-cols-1 md:grid-cols-2 md:justify-center text-center mx-auto">
@@ -105,8 +114,11 @@
         @endfor
     </div>
 
+    <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
     <div class="mt-20 mb-10 max-w-md mx-auto">
         <h1 class="text-xl md:text-3xl font-poppins font-semibold text-gray-800">{{__("Departemen Kewirausahaan")}}</h1>
+        <div class="h-1 w-32 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
     </div>
     <div
         class="max-w-lg space-y-4 md:space-y-0 mt-4 md:mt-10 grid grid-cols-1 md:grid-cols-2 md:justify-center text-center mx-auto">
@@ -140,8 +152,11 @@
         @endfor
     </div>
 
+    <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
     <div class="mt-20 mb-10 max-w-md mx-auto">
         <h1 class="text-xl md:text-3xl font-poppins font-semibold text-gray-800">{{__("Departemen Lingkungan Hidup")}}</h1>
+        <div class="h-1 w-12 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
     </div>
     <div
         class="max-w-lg space-y-4 md:space-y-0 mt-4 md:mt-10 grid grid-cols-1 md:grid-cols-2 md:justify-center text-center mx-auto">
@@ -175,8 +190,11 @@
         @endfor
     </div>
 
+    <hr class="h-1 bg-gray-100 my-5 md:my-10 rounded-full">
+
     <div class="mt-20 mb-10 max-w-md mx-auto">
         <h1 class="text-xl md:text-3xl font-poppins font-semibold text-gray-800">{{__("Departemen Hubungan Masyarakat")}}</h1>
+        <div class="h-1 w-24 bg-gray-800 rounded-full mt-1 mb-0 mx-auto"></div>
     </div>
     <div
         class="max-w-lg space-y-4 md:space-y-0 mt-4 md:mt-10 grid grid-cols-1 md:grid-cols-2 md:justify-center text-center mx-auto">

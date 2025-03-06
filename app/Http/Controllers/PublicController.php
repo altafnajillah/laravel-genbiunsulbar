@@ -177,20 +177,25 @@ class PublicController extends Controller
             $query->where('type', 'image')->limit(1);
         }])->get();
 
-        $items = $plans->map(function ($plan) {
-            return [
-                'id' => $plan->id,
-                'title' => $plan->title,
-                'thumbnail' => $plan->galleries->first(),
-                'held_at' => $plan->held_at,
-            ];
-        })->filter(function ($item) {
-            return !is_null($item['thumbnail']);
+        $items = $plans->filter(function ($plan) {
+            return $plan->galleries->isNotEmpty();
+        })->map(function ($plan) {
+
+            $plan->thumbnail = $plan->galleries->first()
+                ? 'storage/' . $plan->galleries->first()->image
+                : '/images/dummy/galleries/dummy-gallery.jpg';
+
+            Carbon::setLocale('id');
+            $plan->held_at = $plan->held_at
+                ? Carbon::parse($plan->held_at)->format('j F Y')
+                : $plan->held_at;
+
+            return $plan;
         });
 
-//        return json_encode($items);
         return view('gallery', compact('items'));
     }
+
 
     public function showGallery($id) {
         $gallery = Plan::with('galleries')->where('id', $id)->first();

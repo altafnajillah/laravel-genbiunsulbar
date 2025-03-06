@@ -9,16 +9,17 @@
             halaman ini</p>
         <div class="grid md:grid-cols-2 mt-10 md:max-w-3xl mx-auto">
             @foreach($items as $item)
-                <a href="{{ route('showGallery', $item['id']) }}" class="mb-4 mx-auto">
-                    <div class="relative text-white w-80 h-52 rounded-xl">
-                        <img class="rounded-xl" loading="lazy" src="{{ "storage/" . $item['thumbnail']['image'] }}" alt="Gambar Berita">
+                <a href="{{ route('showGallery', $item->id) }}" class="mb-4 mx-auto">
+                    <div class="relative text-white w-80 h-44 rounded-xl">
+                        <img class="rounded-xl" loading="lazy" src="{{ $item->thumbnail }}" alt="Gambar Berita">
                         <div class="absolute text-sm bottom-2 left-2 rounded-full px-2 py-1 bg-gray-200 w-fit text-gray-800 opacity-75">
-                            {{ \Carbon\Carbon::parse($item['held_at'])->translatedFormat('j F Y') }}
+                            {{ $item->held_at }}
                         </div>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold my-1 md:my-4 text-gray-800">{{ $item['title'] }}</h3>
+                    <h3 class="text-xl md:text-2xl font-bold my-1 md:my-4 text-gray-800">{{ $item->title }}</h3>
                 </a>
             @endforeach
+
         </div>
     </div>
 @endsection

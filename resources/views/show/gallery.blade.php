@@ -12,26 +12,22 @@
 
         <div class="grid md:grid-cols-2 xl:grid-cols-3 mt-10 md:max-w-3xl xl:max-w-5xl mx-auto">
             @foreach($gallery->galleries as $item)
-                @if($item->type == 'video' && $item->video != null)
-                    <div class="mb-4 mx-auto">
-                        <div class="text-white w-80 h-52 rounded-xl">
+                <div class="mb-4 mx-auto">
+                    <div class="text-white w-80 h-44 rounded-xl">
+                        @if($item->type == 'video' && $item->video != null)
                             <iframe class="rounded-xl w-full h-full"
                                     width="560" height="315" src="{{ $item->video }}"
                                     title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                             </iframe>
-                        </div>
-                    </div>
-                @elseif($item->image != null)
-                    <div class="mb-4 mx-auto">
-                        <div class=" text-white w-80 h-52 rounded-xl">
-                            <img class="rounded-xl" loading="lazy" width="900"
+                        @elseif($item->image != null)
+                            <img class="rounded-xl" loading="lazy"
                                  src="{{ asset('storage/' . $item->image ) }}"
                                  alt="Gambar Berita">
-                        </div>
+                        @endif
                     </div>
-                @endif
+                </div>
             @endforeach
         </div>
     </div>

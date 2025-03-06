@@ -77,7 +77,7 @@ class MemberResource extends Resource
                         )
                     ),
                 Tables\Columns\ImageColumn::make('image')
-                    ->defaultImageUrl(url('/storage/members/dummy-avatar.jpg'))
+                    ->defaultImageUrl(url('/images/dummy/members/dummy-avatar.jpg'))
                     ->square(),
             ])
             ->filters([

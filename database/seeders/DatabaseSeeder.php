@@ -29,6 +29,8 @@ class DatabaseSeeder extends Seeder
             DemisionerSeeder::class,
             NewsSeeder::class,
             NewsParagraphSeeder::class,
+            PlanSeeder::class,
+            GallerySeeder::class,
         ]);
     }
 }
